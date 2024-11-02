@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Amazon Previwer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <img src="img/logo.png" alt="logo" height="40px">
+        <h1 class="head">Amazon&nbsp;<sup><span class="super-script">©️®️</span></sup></h1>
+    </div>
+    <hr>
+    <div class="main">
+        <div class="preview-img">
+            <img src="img/iphone1.jpg" alt="15pro" class="prev-imgs" style="margin-top: 80px"; onclick="backtomainimg('1')">
+            <img src="img/iphone2.jpg" alt="1" class="prev-imgs" onclick="previewchange('img/iphone2.jpg')">
+            <img src="img/iphone3.jpg" alt="2" class="prev-imgs" onclick="previewchange('img/iphone3.jpg')">
+            <img src="img/iphone5.jpg" alt="3" class="prev-imgs" onclick="previewchange('img/iphone5.jpg')">
+            <img src="img/iphone4.jpg" alt="4" class="prev-imgs" onclick="previewchange('img/iphone4.jpg')">
+        </div>
+        
+        <div class="products">
+            <img src="img/iphone1.jpg" alt="15pro" id="main-product-img">
+            <img src="img/iphonedetails.png" alt="details" class="product-img">
+        </div>
+    </div>
+<br><br>
+    <div class="desc-img">
+        <img src="img/iphone.jpg" alt="6" class="details-img">
+        <img src="img/iphoneadd.jpg" alt="5" class="details-img">
+        <img src="img/iphoneadd2.jpg" alt="7" class="details-img">
+    </div>
+
+    <script>
+        function previewchange(imageName) {
+            const mainimg = document.getElementById('main-product-img');
+            mainimg.src = imageName;
+        }
+
+        function backtomainimg(num)
+        {
+            if (num == 1) {
+                const mainimg = document.getElementById('main-product-img');
+                mainimg.src = "img/iphone1.jpg";
+            }
+            else
+            console.log("Refresh");
+        }
+    </script>
+    
+</body>
+</html>
